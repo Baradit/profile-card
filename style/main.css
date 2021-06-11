@@ -16,6 +16,7 @@ body {
   font-size: 1.125rem;
   font-weight: 400;
   color: #2d3248;
+  background-color: #19a2ae;
 }
 
 h1, h2, h3, h4 {
@@ -44,10 +45,8 @@ li {
 
 .container {
   position: relative;
-  background-color: #19a2ae;
-  max-width: 1440px;
   overflow: hidden;
-  padding: 5rem 1.5rem;
+  padding: 10rem 2rem;
 }
 
 .container .pattern-bottom {
@@ -59,10 +58,11 @@ li {
 .container .pattern-top {
   position: absolute;
   left: -50%;
-  top: -30%;
+  top: -20%;
 }
 
 .card {
+  max-width: 100%;
   border-radius: 1rem;
   position: relative;
   background: #fff;
@@ -87,7 +87,8 @@ li {
 
 .card__body {
   text-align: center;
-  border-bottom: 1px solid #6a6f81;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 1.5rem;
 }
 
 .card__body h2 {
@@ -102,7 +103,7 @@ li {
 }
 
 .card__footer {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .card__footer ul {
@@ -113,10 +114,53 @@ li {
 }
 
 .card__footer ul > * {
+  font-weight: 700;
   width: 100%;
 }
 
 .card__footer ul span {
+  padding-top: 0.4rem;
   display: block;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 30rem) {
+  .container {
+    height: 100vh;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .container .pattern-bottom {
+    position: absolute;
+    right: -3%;
+    bottom: -50%;
+  }
+  .container .pattern-top {
+    position: absolute;
+    left: -4%;
+    top: -42%;
+  }
+  .card {
+    width: 400px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+.attribution {
+  background: #fff;
+  padding: 0.2rem 0;
 }
 /*# sourceMappingURL=main.css.map */
