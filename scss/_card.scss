@@ -1,0 +1,79 @@
+.container{
+    position: relative;
+    background-color: $darkCyan;
+    max-width: 1440px;
+    overflow: hidden;
+    padding: 5rem 1.5rem;
+
+    .pattern-bottom{
+        position: absolute;
+        right: -50%;
+        bottom: -20%;
+    }
+
+    .pattern-top{
+        position: absolute;
+        left: -50%;
+        top: -30%;
+    }
+}
+
+.card{
+    border-radius: 1rem;
+    position: relative;
+    background: #fff;
+
+    &__header{
+        border-radius: 1rem 1rem 0 0;
+        height: 150px;
+        background-image: url(/images/bg-pattern-card.svg);
+    
+        &-img{
+            padding-bottom: 1rem;
+            
+            img{
+                border-radius: 50%;
+                border: 5px solid #fff;
+                overflow: hidden;
+                margin-top: -50px;
+            }
+            
+        }
+    }
+
+    &__body{
+        text-align: center;
+        border-bottom: 1px solid $darkGrayisdhBlue;
+
+        h2{
+            display: inline;
+        }
+
+        h3{
+            padding-top: 0.5rem;
+            font-size: 1rem;
+            font-weight: 400;
+            color: $darkGrayisdhBlue;
+        }
+
+    }
+
+    &__footer{
+        
+        padding: 2rem 0;
+        ul{
+            display: flex;
+            text-align: center;
+            
+            & > *{
+                width: 100%;
+            }
+            span{
+                display: block;
+            }
+        
+        }
+
+
+    }
+}

@@ -1,0 +1,122 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #2d3248;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  background-color: #19a2ae;
+  max-width: 1440px;
+  overflow: hidden;
+  padding: 5rem 1.5rem;
+}
+
+.container .pattern-bottom {
+  position: absolute;
+  right: -50%;
+  bottom: -20%;
+}
+
+.container .pattern-top {
+  position: absolute;
+  left: -50%;
+  top: -30%;
+}
+
+.card {
+  border-radius: 1rem;
+  position: relative;
+  background: #fff;
+}
+
+.card__header {
+  border-radius: 1rem 1rem 0 0;
+  height: 150px;
+  background-image: url(/images/bg-pattern-card.svg);
+}
+
+.card__header-img {
+  padding-bottom: 1rem;
+}
+
+.card__header-img img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  overflow: hidden;
+  margin-top: -50px;
+}
+
+.card__body {
+  text-align: center;
+  border-bottom: 1px solid #6a6f81;
+}
+
+.card__body h2 {
+  display: inline;
+}
+
+.card__body h3 {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.card__footer {
+  padding: 2rem 0;
+}
+
+.card__footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.card__footer ul > * {
+  width: 100%;
+}
+
+.card__footer ul span {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
